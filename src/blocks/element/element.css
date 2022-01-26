@@ -1,0 +1,44 @@
+.element {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  display: block;
+  margin: 0;
+}
+
+.element__button-card {
+  border: none;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  display: block;
+  height: 282px;
+  padding: 0;
+  transition: opacity .4s linear;
+  width: 100%;
+}
+
+.element__image {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  height: 282px;
+  width: 100%;
+}
+
+.element__caption {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 21px;
+}
+
+.element__caption-title {
+  /* flex-basis: 200px; */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  margin: 25px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
