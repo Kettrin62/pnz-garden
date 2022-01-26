@@ -1,0 +1,42 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.16;
+  margin: 0;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 129%;
+  font-weight: 500;
+}
+
+.nav__link_main {
+  align-self: flex-start;
+}
+
+.nav__image {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
