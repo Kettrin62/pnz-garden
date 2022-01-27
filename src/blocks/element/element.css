@@ -1,5 +1,5 @@
 .element {
-  background-color: #dcdcdc;
+  background-color: #e8e8e8;
   border-radius: 5px;
   display: block;
   margin: 0;
@@ -10,10 +10,14 @@
   border-radius: 5px 5px 0 0;
   cursor: pointer;
   display: block;
-  height: 282px;
+  height: 100%;
   padding: 0;
-  transition: opacity .4s linear;
   width: 100%;
+  transition: transform .3s ease-in-out;
+}
+
+.element__button-card:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .element__image {
@@ -21,24 +25,28 @@
   display: block;
   height: 282px;
   width: 100%;
+  object-fit: cover;
 }
 
 .element__caption {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 0 21px;
+  justify-content: center;
+  margin: auto 21px;
+  height: 70px;
 }
 
 .element__caption-title {
-  /* flex-basis: 200px; */
+  /* flex-basis: 70px; */
+  max-width: 100%;
   font-size: 20px;
   font-weight: 500;
-  line-height: 29px;
-  margin: 25px 0;
+  line-height: 1.1;
+  margin: 10px 0;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  text-align: center;
 }
 

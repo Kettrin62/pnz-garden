@@ -30,6 +30,9 @@
         <li class="nav__link">
           <a href="#" class="nav__link">
             <img src="./images/basket.svg" alt="Корзина" class="nav__image">
+            <div class="nav__basket">
+              <p class="nav__count">0</p>
+            </div>
           </a>
         </li>
         <li class="nav__link">
@@ -42,68 +45,181 @@
 
   </header>
   <main class="content page__section">
-    <section class="cover">
+    <!-- <section class="cover">
       <h2 class="cover__title">
         В&nbsp;Саранске не&nbsp;торгуем и&nbsp;торговать не&nbsp;планируем. 
         Торгуем в&nbsp;Пензе и&nbsp;Рузаевке бла бла бла
       </h2>
+    </section> -->
+    <section>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper__slide">
+            <div class="swiper__images">
+
+              <h2 class="swiper__title">
+                В&nbsp;Саранске не&nbsp;торгуем и&nbsp;торговать не&nbsp;планируем. 
+                Торгуем в&nbsp;Пензе и&nbsp;Рузаевке бла бла бла
+              </h2>
+              <img src="./images/penza.png" alt="Шоссе" class="swiper__image">
+            </div>
+          </div>
+          <div class="swiper-slide swiper__slide">
+            <!-- <h2 class="title swiper__item">Грэвел</h2>
+            <p class="discription discription_theme_light swiper__item">
+              Грэвел похож на&nbsp;шоссейный велосипед, но&nbsp;конструкция рамы немного 
+              отличается, и&nbsp;на&nbsp;нём стоят более широкие покрышки, всё для того 
+              чтобы проехать по&nbsp;лёгкому бездорожью.
+            </p> -->
+            <div class="swiper__images">
+              <img src="./images/penza-2.png" alt="Шоссе" class="swiper__image">
+            </div>
+          </div>
+          <div class="swiper-slide swiper__slide">
+            <!-- <h2 class="title swiper__item">ТТ</h2>
+            <p class="discription discription_theme_light swiper__item">
+              ТТ&nbsp;&mdash; это велосипед для триатлона или раздельного старта, гооняют 
+              на&nbsp;таком велике только по&nbsp;равнинному асфальту, велик очень быстрые 
+              и&nbsp;аэродинамичный.
+            </p> -->
+            <div class="swiper__images">
+              <img src="./images/penza-3.jpg" alt="Шоссе" class="swiper__image">
+            </div>
+          </div>
+        </div>
+        <div class="swiper__button-prev"></div>
+        <div class="swiper__button-next"></div>
+
+        <div class="swiper__pagination"></div>
+      </div>
     </section>
+
     <section class="elements">
 
       <h2 class="elements__title">Саженцы плодово-ягодных и&nbsp;декаративных растений на&nbsp;выбор</h2>
+      
       <ul class="cards">
         <li class="cards__item">
-          <figure class="element">
-            <button type="button" class="element__button-card">
-              <img class="element__image" src="./images/august.jpg" alt="Августовская роса">
-            </button>
-            <figcaption class="element__caption">
-              <h3 class="element__caption-title">Августовская роса</h3>
-              
-
-              </div>
-            </figcaption>
-          </figure>
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/pear.jpg" alt="Груша">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Груша</h3>
+              </figcaption>
+            </figure>
+          </button>
         </li>
+
         <li class="cards__item">
-          <figure class="element">
-            <button type="button" class="element__button-card">
-              <img class="element__image" src="./images/yakovlev.jpg" alt="Памяти Яковлева">
-            </button>
-            <figcaption class="element__caption">
-              <h3 class="element__caption-title">Памяти Яковлева</h3>
-              
-
-              </div>
-            </figcaption>
-          </figure>
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/apple.jpg" alt="Яблони ">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Яблони </h3>
+              </figcaption>
+            </figure>
+          </button>
         </li>
+
         <li class="cards__item">
-          <figure class="element">
-            <button type="button" class="element__button-card">
-              <img class="element__image" src="./images/chudesnitca.jpg" alt="Чудесница">
-            </button>
-            <figcaption class="element__caption">
-              <h3 class="element__caption-title">Чудесница</h3>
-              
-
-              </div>
-            </figcaption>
-          </figure>
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/apricot.jpg" alt="Абрикос">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Абрикос</h3>
+              </figcaption>
+            </figure>
+          </button>
         </li>
+
         <li class="cards__item">
-          <figure class="element">
-            <button type="button" class="element__button-card">
-              <img class="element__image" src="./images/allegro.jpg" alt="Аллегро">
-            </button>
-            <figcaption class="element__caption">
-              <h3 class="element__caption-title">Аллегро</h3>
-              
-
-              </div>
-            </figcaption>
-          </figure>
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/cherry.jpg" alt="Вишня">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Вишня</h3>
+              </figcaption>
+            </figure>
+          </button>
         </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/plum.jpg" alt="Слива, алыча">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Слива, алыча</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/sweet-cherry.png" alt="Черешня">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Черешня</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/blackberry.jpg" alt="Ежевика">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Ежевика</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/honeysuckle.jpg" alt="Жимолость, крыжовник, смородина">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Жимолость, крыжовник, смородина</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/lilac.jpg" alt="Сирень и др. декоративные">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Сирень и др. декоративные</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/raspberry.jpg" alt="Малина">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Малина</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
+        <li class="cards__item">
+          <button type="button" class="element__button-card">
+            <figure class="element">
+              <img class="element__image" src="./images/mountain-ash.jpg" alt="Рябина">
+              <figcaption class="element__caption">
+                <h3 class="element__caption-title">Рябина</h3>
+              </figcaption>
+            </figure>
+          </button>
+        </li>
+
 
       </ul>
     </section>
@@ -117,7 +233,7 @@
     <img class="footer__icon" src="./images/map.svg" alt="Иконка карты">
     <p class="footer__text">Пензенская область. Иссинский р-н Исса. Ул. Гаврилова д.36</p>
   </footer>
-  <script src="./scripts/index.js"></script>
+  <script src="./pages/index.js"></script>
 </body>
 </html>
 
