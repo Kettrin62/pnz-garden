@@ -50,3 +50,26 @@
   text-align: center;
 }
 
+.element__apple {
+  background: url(../../images/apple.jpg) center/cover no-repeat;
+  min-height: 352px;
+  display: flex;
+  width: 282px;
+  align-items: flex-end;
+}
+
+.element__caption-apple {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: auto 0 0;
+  text-align: center;
+  min-height: 70px;
+  background-color: #e8e8e8;
+  opacity: .8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
