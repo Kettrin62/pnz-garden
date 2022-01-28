@@ -44,3 +44,14 @@
     max-width: 594px;
   }
 }
+
+@media all and (max-width: 630px) {
+  .elements {
+    max-width: 282px;
+  }
+
+  .elements__title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+}

@@ -10,7 +10,27 @@
 }
 
 .header__nav {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+
   width: 100%;
   /* max-width: 1200px; */
   margin: 0 auto;
+}
+
+
+.header__button {
+  margin-right: 20px;
+}
+
+@media all and (max-width: 600px) {
+  
+  .header__nav {
+    display: none;
+  }
+
+  .header__button {
+    margin-right: 20px;
+  }
 }

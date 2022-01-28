@@ -11,7 +11,7 @@
 </head>
 <body class="page">
   <header class="header page__section">
-    <nav class="nav header__nav">
+    <nav class="nav header__nav nav_desctop">
       <a href="#" class="nav__link">
         <h1 class="nav__title">
           Питомник Елизарова
@@ -43,6 +43,35 @@
       </ul>
     </nav>
 
+    <button type="button" class="button-menu header__button">
+      <span class="button-menu__line"></span>
+      <span class="button-menu__line"></span>
+      <span class="button-menu__line"></span>
+    </button>
+    <section class="menu">
+      <button type="button" class="menu__button-close menu__button-close_theme_light"></button>
+      <nav class="nav">
+        <ul class="nav__links nav__links_type_vertical">
+          <li class="nav__link">
+            <a href="#" class="nav__link">
+              <h1 class="nav__title">
+                Питомник Елизарова
+              </h1>
+            </a>
+          </li>
+          <li class="header__link">
+            <a href="#" class="nav__link">Саженцы</a>
+          </li>
+          <li class="header__link">
+            <a href="#" class="nav__link">О питомнике</a>
+          </li>
+          <li class="nav__link">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
   </header>
   <main class="content page__section">
     <!-- <section class="cover">
@@ -51,7 +80,6 @@
         Торгуем в&nbsp;Пензе и&nbsp;Рузаевке бла бла бла
       </h2>
     </section> -->
-    <img src="./images/penza-3.jpg" alt="Шоссе" class="swiper__image">
     <section>
       <div class="swiper">
         <div class="swiper-wrapper">
@@ -221,12 +249,20 @@
 
   </main>
   <footer class="footer page__section">
-    <img class="footer__icon" src="./images/telephone-icon.svg" alt="Иконка телефона">
-    <p class="footer__text">8 962 474 30 70</p>
-    <img class="footer__icon" src="./images/mail.svg" alt="Иконка e-mail адреса">
-    <p class="footer__text">sajenci58@gmail.com</p>
-    <img class="footer__icon" src="./images/map.svg" alt="Иконка карты">
-    <p class="footer__text"> 442710, Пензенская область, р.п.Исса, ул.Гаврилова, д.36</p>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <img class="footer__icon" src="./images/telephone-icon.svg" alt="Иконка телефона">
+        <p class="footer__text">8 962 474 30 70</p>
+      </li>
+      <li class="footer__item">
+        <img class="footer__icon" src="./images/mail.svg" alt="Иконка e-mail адреса">
+        <p class="footer__text">sajenci58@gmail.com</p>
+      </li>
+      <li class="footer__item">
+        <img class="footer__icon" src="./images/map.svg" alt="Иконка карты">
+        <p class="footer__text"> 442710, Пензенская область, р.п.Исса, ул.Гаврилова, д.36</p>
+      </li>
+    </ul>
   </footer>
   <script src="./pages/index.js"></script>
 </body>

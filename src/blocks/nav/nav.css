@@ -1,4 +1,4 @@
-.nav {
+.nav_desctop {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,7 +14,6 @@
 
 .nav__title:hover {
   color: #006400;
-  /* opacity: .9; */
 }
 
 .nav__links {
@@ -62,14 +61,25 @@
   border-radius: 50%;
   background-color: red;
   color: #fff;
-  /* color: red; */
   font-size: 10px;
   font-weight: 700;
   text-align: center;
   line-height: 15px;
-  /* border: 2px solid red; */
 }
 .nav__count {
   margin: 0;
   padding: 0;
 }
+
+@media all and (max-width: 600px) {
+  
+  .nav_desctop {
+    display: none;
+  }
+
+  .nav__links {
+    flex-direction: column;
+  }
+
+}
+
