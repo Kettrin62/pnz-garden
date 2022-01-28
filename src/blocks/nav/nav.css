@@ -54,14 +54,15 @@
 
 .nav__basket {
   position: absolute;
-  right: -4px;
-  top: -8px;
+  right: 0;
+  top: -16px;
   min-width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: red;
-  color: #fff;
-  font-size: 10px;
+  /* background-color: red; */
+  /* color: #fff; */
+  color: red;
+  font-size: 12px;
   font-weight: 700;
   text-align: center;
   line-height: 15px;
@@ -71,7 +72,7 @@
   padding: 0;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 730px) {
   
   .nav_desctop {
     display: none;

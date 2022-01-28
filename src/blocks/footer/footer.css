@@ -1,12 +1,13 @@
 .footer {
   border-top: 1px solid rgba(84, 84, 84, .7);
   width: calc(100% - 25%/5);
+
   margin: 0 auto;
   box-sizing: border-box;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 10px; */
+  justify-content: space-between;
+  gap: 70px;
 
 }
 
@@ -41,6 +42,15 @@
   width: 18px;
   height: 18px;
   object-fit: cover;
+}
+
+.footer__copy {
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  margin: 0;
+  opacity: .7;
 }
 
 @media all and (max-width: 960px) {

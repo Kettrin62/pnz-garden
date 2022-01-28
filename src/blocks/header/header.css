@@ -24,7 +24,7 @@
   margin-right: 20px;
 }
 
-@media all and (max-width: 600px) {
+/* @media all and (max-width: 600px) {
   
   .header__nav {
     display: none;
@@ -33,4 +33,4 @@
   .header__button {
     margin-right: 20px;
   }
-}
+} */

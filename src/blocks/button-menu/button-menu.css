@@ -10,7 +10,7 @@
 }
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 730px) {
   .button-menu {
     display: flex;
     justify-content: center;
