@@ -51,11 +51,18 @@
 }
 
 .element__apple {
-  background: url(../../images/apple.jpg) center/cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background: url(../../images/apple.jpg) center/cover no-repeat; */
   min-height: 352px;
   display: flex;
   width: 282px;
   align-items: flex-end;
+  border-radius: 5px;
 }
 
 .element__caption-apple {
