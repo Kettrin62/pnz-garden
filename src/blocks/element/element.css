@@ -44,7 +44,7 @@
   justify-content: center;
 }
 
-@media all and (max-width: 630px) {
+@media all and (max-width: 600px) {
   .element__image {
     height: 61vw;
   }
