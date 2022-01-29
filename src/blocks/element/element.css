@@ -1,10 +1,3 @@
-.element {
-  background-color: #e8e8e8;
-  border-radius: 5px;
-  display: block;
-  margin: 0;
-}
-
 .element__button-card {
   border: none;
   border-radius: 5px 5px 0 0;
@@ -21,43 +14,14 @@
 }
 
 .element__image {
-  border-radius: 5px 5px 0 0;
-  display: block;
-  height: 282px;
-  width: 100%;
-  object-fit: cover;
-}
+  margin: 0;
 
-.element__caption {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto 21px;
-  height: 70px;
-}
-
-.element__caption-title {
-  /* flex-basis: 70px; */
-  max-width: 100%;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.1;
-  margin: 10px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* white-space: nowrap; */
-  text-align: center;
-}
-
-.element__apple {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background: url(../../images/apple.jpg) center/cover no-repeat; */
   min-height: 352px;
   display: flex;
   width: 282px;
@@ -65,7 +29,7 @@
   border-radius: 5px;
 }
 
-.element__caption-apple {
+.element__caption {
   width: 100%;
   font-size: 20px;
   font-weight: 500;
@@ -79,4 +43,3 @@
   align-items: center;
   justify-content: center;
 }
-
