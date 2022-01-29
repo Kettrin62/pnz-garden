@@ -86,6 +86,12 @@
     display: none;
   }
 
+  .nav__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+
   .nav__links {
     flex-direction: column;
   }
@@ -101,7 +107,10 @@
   }
 
   .nav__basket {
-    top: -10px;
+    top: -9px;
+    font-size: 10px;
+    line-height: 12px;
+
   }
 
   .nav__link_mobile {

@@ -9,15 +9,12 @@
   /* background: url(../../images/penza.png) center/cover no-repeat #2a2c2f; */
   min-height: 440px;
   position: relative;
-
   background-repeat: no-repeat;
   background-position: left bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-
 }
 
 .swiper__images::before {
@@ -34,7 +31,7 @@
 
 .swiper__image {
   object-fit: cover;
-  height: 440px;
+  /* height: 440px; */
   width: 100%;
   /* background-color: #2a2c2f;
   opacity: .6; */
@@ -48,7 +45,7 @@
   color: #fff;
   position: absolute;
   display: flex;
-  min-height: 440px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0 10%;
   flex-direction: column;
@@ -94,8 +91,6 @@
   right: 0;
   position: absolute;
   top: calc(50% - 25px);
-
-  /* bottom: 0; */
   width: 50px;
   height: 50px;
   z-index: 10;
@@ -104,7 +99,6 @@
   align-items: center;
   justify-content: center;
   opacity: .7;
-
 }
 
 .swiper__button-next::after {
@@ -127,9 +121,41 @@
   z-index: 3;
   margin-left: calc((100% - 30px)/2);
   margin-top: -25px;
-
 }
 
 .swiper-pagination-bullet {
   background-color: #fff;
+}
+
+@media all and (max-width: 730px) {
+  .swiper__images {
+    min-height: 300px;
+  }
+
+  .swiper__title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.16;
+  }
+
+  .swiper__button-prev {
+    left: -5px;
+  }
+  
+  .swiper__button-prev::after {
+    width: 20px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  
+  .swiper__button-next {
+    right: -5px;
+  }
+  
+  .swiper__button-next::after {
+    width: 20px;
+    height: 30px;
+    border-radius: 30px;
+  }
+  
 }
