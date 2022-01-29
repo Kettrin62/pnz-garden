@@ -10,8 +10,9 @@
 }
 
 
-/* @media all and (max-width: 630px) {
+@media all and (max-width: 630px) {
   .cards {
-    grid-template-columns: repeat(auto-fill, 40%);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
-} */
+}
