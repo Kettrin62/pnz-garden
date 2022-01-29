@@ -43,11 +43,35 @@
       </ul>
     </nav>
 
-    <button type="button" class="button-menu header__button">
-      <span class="button-menu__line"></span>
-      <span class="button-menu__line"></span>
-      <span class="button-menu__line"></span>
-    </button>
+    <div class="nav__menu">
+      <button type="button" class="button-menu header__button">
+        <span class="button-menu__line"></span>
+        <span class="button-menu__line"></span>
+        <span class="button-menu__line"></span>
+      </button>
+      <a href="#" class="nav__link nav__link_mobile">
+        <h1 class="nav__title">
+          Питомник Елизарова
+        </h1>
+      </a>
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__link">
+        <a href="#" class="menu__link">
+          <img src="./images/basket.svg" alt="Корзина" class="nav__image">
+          <div class="nav__basket">
+            <p class="nav__count">1</p>
+          </div>
+        </a>
+      </li>
+      <li class="nav__link">
+        <a href="#" class="nav__link">
+          <img src="./images/account.svg" alt="Личный кабинет" class="nav__image">
+        </a>
+      </li>
+    </ul>
+
     <section class="menu">
       <button type="button" class="menu__button-close menu__button-close_theme_light"></button>
       <nav class="nav">
