@@ -2,12 +2,10 @@
   list-style-type: none;
   margin: 0 auto;
   padding: 0 0 0 50px;
-
   display: grid;
   gap: 20px 30px;
   grid-template-columns: repeat(auto-fill, 282px);
   list-style-type: none;
-
   max-width: 1068px;
 }
 
