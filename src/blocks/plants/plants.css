@@ -1,0 +1,6 @@
+.plants {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  /* max-width: 1220px; */
+}

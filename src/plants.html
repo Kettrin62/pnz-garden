@@ -12,7 +12,7 @@
 <body class="page">
   <header class="header page__section">
     <nav class="nav header__nav nav_desctop">
-      <a href="#" class="nav__link">
+      <a href="./index.html" class="nav__link">
         <h1 class="nav__title">
           Питомник Елизарова
         </h1>
@@ -29,9 +29,9 @@
         </li>
         <li class="nav__link">
           <a href="#" class="nav__link">
-            <img src="./images/basket.svg" alt="Корзина" class="nav__image">
-            <div class="nav__basket">
-              <p class="nav__count">20</p>
+            <img src="./images/cart.svg" alt="Корзина" class="nav__image">
+            <div class="nav__cart">
+              <p class="nav__count">1</p>
             </div>
           </a>
         </li>
@@ -43,11 +43,35 @@
       </ul>
     </nav>
 
-    <button type="button" class="button-menu header__button">
-      <span class="button-menu__line"></span>
-      <span class="button-menu__line"></span>
-      <span class="button-menu__line"></span>
-    </button>
+    <div class="nav__menu">
+      <button type="button" class="button-menu header__button">
+        <span class="button-menu__line"></span>
+        <span class="button-menu__line"></span>
+        <span class="button-menu__line"></span>
+      </button>
+      <a href="./index.html" class="nav__link nav__link_mobile">
+        <h1 class="nav__title">
+          Питомник Елизарова
+        </h1>
+      </a>
+    </div>
+
+    <ul class="nav__list">
+      <li class="nav__link">
+        <a href="#" class="menu__link">
+          <img src="./images/cart.svg" alt="Корзина" class="nav__image">
+          <div class="nav__cart">
+            <p class="nav__count">1</p>
+          </div>
+        </a>
+      </li>
+      <li class="nav__link">
+        <a href="#" class="nav__link">
+          <img src="./images/account.svg" alt="Личный кабинет" class="nav__image">
+        </a>
+      </li>
+    </ul>
+
     <section class="menu">
       <button type="button" class="menu__button-close menu__button-close_theme_light"></button>
       <nav class="nav">
@@ -73,170 +97,130 @@
     </section>
 
   </header>
+
   <main class="content page__section">
+    
     <section class="plants">
       <ul class="categories">
-        <li>
-          <a href="#" class="">Груша</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button categories__button_active">Все категории</button>
         </li>
-        <li>
-          <a href="#" class="">Яблони</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Груша</button>
         </li>
-        <li>
-          <a href="#" class="">Абрикос</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Яблони</button>
         </li>
-        <li>
-          <a href="#" class="">Вишня</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Абрикос</button>
         </li>
-        <li>
-          <a href="#" class="">Слива, алыча</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Вишня</button>
         </li>
-        <li>
-          <a href="#" class="">Черешня</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button categories__button_active">Слива, алыча</button>
         </li>
-        <li>
-          <a href="#" class="">Ежевика</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Черешня</button>
         </li>
-        <li>
-          <a href="#" class="">Жимолость, крыжовник, смородина</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Ежевика</button>
         </li>
-        <li>
-          <a href="#" class="">Сирень и др. декоративные</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button categories__button_active">Жимолость, крыжовник, смородина</button>
         </li>
-        <li>
-          <a href="#" class="">Малина</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Сирень и др. декоративные</button>
         </li>
-        <li>
-          <a href="#" class="">Рябина</a>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Малина</button>
+        </li>
+        <li class="categories__item">
+          <button type="button" class="categories__button">Рябина</button>
         </li>
       </ul>
+
       <ul class="cards">
-        <!-- <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/pear.jpg" alt="Груша">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Груша</h3>
-              </figcaption>
+
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/pear.jpg)">
+              <figcaption class="card__caption">Венецианская груша</figcaption>
             </figure>
           </button>
-        </li> -->
-
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <div class="element__apple" style="background-image:url(./images/pear.jpg)">
-                <h3 class="element__caption-apple">Груша</h3>
-            </div>
-          </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount Venecian Pear бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <div class="element__apple" style="background-image:url(./images/apple.jpg)">
-                <h3 class="element__caption-apple">Яблони</h3>
-            </div>
-          </button>
-        </li>
-
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/apricot.jpg" alt="Абрикос">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Абрикос</h3>
-              </figcaption>
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/apple.jpg)">
+              <figcaption class="card__caption">Адамово яблоко</figcaption>
             </figure>
           </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount Adam's Apple бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/cherry.jpg" alt="Вишня">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Вишня</h3>
-              </figcaption>
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/apricot.jpg)">
+              <figcaption class="card__caption">Сладкий персик</figcaption>
             </figure>
           </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount sweet Peach бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/plum.jpg" alt="Слива, алыча">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Слива, алыча</h3>
-              </figcaption>
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/pear.jpg)">
+              <figcaption class="card__caption">Венецианская груша</figcaption>
             </figure>
           </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount Venecian Pear бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/sweet-cherry.png" alt="Черешня">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Черешня</h3>
-              </figcaption>
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/apple.jpg)">
+              <figcaption class="card__caption">Адамово яблоко</figcaption>
             </figure>
           </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount Adam's Apple бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/blackberry.jpg" alt="Ежевика">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Ежевика</h3>
-              </figcaption>
+        <li class="card">
+          <button type="button" class="card__button-card">
+            <figure class="card__image" style="background-image:url(./images/apricot.jpg)">
+              <figcaption class="card__caption">Сладкий персик</figcaption>
             </figure>
           </button>
+          <div class="card__discription">
+            <p class="card__text">Little discription abount sweet Peach бла-бла-бла...</p>
+            <p class="card__text">Количество</p>
+            <button class="card__button-cart">В корзинку</button>
+          </div>
         </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/honeysuckle.jpg" alt="Жимолость, крыжовник, смородина">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Жимолость, крыжовник, смородина</h3>
-              </figcaption>
-            </figure>
-          </button>
-        </li>
 
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/lilac.jpg" alt="Сирень и др. декоративные">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Сирень и др. декоративные</h3>
-              </figcaption>
-            </figure>
-          </button>
-        </li>
-
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/raspberry.jpg" alt="Малина">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Малина</h3>
-              </figcaption>
-            </figure>
-          </button>
-        </li>
-
-        <li class="cards__item">
-          <button type="button" class="element__button-card">
-            <figure class="element">
-              <img class="element__image" src="./images/mountain-ash.jpg" alt="Рябина">
-              <figcaption class="element__caption">
-                <h3 class="element__caption-title">Рябина</h3>
-              </figcaption>
-            </figure>
-          </button>
-        </li>
 
 
       </ul>
