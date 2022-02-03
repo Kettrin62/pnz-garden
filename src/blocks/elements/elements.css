@@ -36,7 +36,6 @@
 @media all and (max-width: 630px) {
   .elements__title {
     font-size: 20px;
-    font-weight: 500;
     line-height: 1.06;
   }
 }
