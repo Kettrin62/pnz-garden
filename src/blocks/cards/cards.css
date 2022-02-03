@@ -1,7 +1,7 @@
 .cards {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0 0 0 50px;
+  padding: 0 0 0 30px;
   display: grid;
   gap: 20px 30px;
   grid-template-columns: repeat(auto-fill, 282px);
@@ -9,14 +9,25 @@
   max-width: 1068px;
 }
 
-@media screen and (max-width: 1165px) {
+@media screen and (max-width: 1220px) {
   .cards {
     max-width: 756px;
   }
 }
 
-@media all and (max-width: 833px) {
+@media all and (max-width: 900px) {
   .cards {
-    max-width: 444px;
+    /* max-width: 444px; */
+    padding-left: 10px;
+    column-gap: 10px;
   }
 }
+
+@media all and (max-width: 800px) {
+  .cards {
+    column-gap: 20px;
+    padding-left: 0;
+  }
+}
+
+

@@ -122,6 +122,9 @@
   transform: scale(1.05, 1.05);
 }
 
+
+
+
 @media all and (max-width: 600px) {
   .card__image {
     height: 61vw;

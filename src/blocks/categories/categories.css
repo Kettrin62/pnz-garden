@@ -30,3 +30,24 @@
 .categories__button:hover {
   transform: scale(1.05, 1.05);
 }
+
+@media all and (max-width: 900px) {
+  .categories {
+    margin-left: 0;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .categories {
+    gap: 0;
+  }
+
+  .categories__button {
+    display: none;
+  }
+
+  .categories__button_active {
+    display: block;
+  }
+}
+
