@@ -127,7 +127,7 @@
 
 @media all and (max-width: 610px) {
   .card__image {
-    height: 61vw;
+    /* height: 61vw; */
   }
 
   .card__caption {

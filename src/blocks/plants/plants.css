@@ -16,3 +16,12 @@
   }
 }
 
+@media all and (max-width: 610px) {
+  .plants {
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 282px;
+    margin: 0 auto;
+  }
+}
+
