@@ -125,7 +125,7 @@
 
 
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 610px) {
   .card__image {
     height: 61vw;
   }
@@ -137,5 +137,13 @@
     min-height: 36px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+
+  .card__quantity {
+    font-size: 12px;
+  }
+
+  .card__price {
+    font-size: 12px;
   }
 }
