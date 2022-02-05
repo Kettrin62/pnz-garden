@@ -32,9 +32,8 @@
 
 @media all and (max-width: 610px) {
   .cards {
-    /* max-width: 282px; */
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    gap: 5px;
   }
 }

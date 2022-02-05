@@ -122,11 +122,19 @@
   transform: scale(1.05, 1.05);
 }
 
+.card__title {
+  display: none;
+}
+
 
 
 
 @media all and (max-width: 610px) {
-
+  .card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
 
   .card__caption {
     font-size: 15px;
@@ -135,6 +143,18 @@
     min-height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
+    display: none;
+  }
+
+  .card__title {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.1;
+    min-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
   }
 
   .card__text {
@@ -158,6 +178,9 @@
 
   .card__image {
     /* height: 61vw; */
+    border-radius: 5px 0 0 5px;
+    height: 100%;
+
   }
 
   .card__discription {
@@ -165,13 +188,17 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
+    border-radius: 0 5px 5px 0;
+
+    position: relative;
+    height: min-content;
   }
 
   .card__button-cart {
-    width: 80%;
+    width: 90%;
     min-height: 25px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
   }
 }

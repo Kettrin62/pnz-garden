@@ -15,9 +15,11 @@
   min-height: 30px;
   text-align: center;
   border-radius: 3px;
-  border: 2px solid #000;
+
   cursor: pointer;
   display: none;
+  font-size: 14px;
+  font-weight: 500;
   /* background-image: url(../../images/categories-button-title.svg);
   background-repeat: no-repeat;
   background-position: right 6px center;
@@ -27,8 +29,8 @@
 
 background-size: 10px 40px; */
 position: relative;
-
-border: 1px solid #e3e3e3;
+border: 1px solid rgba(84, 84, 84, 0.7);
+/* border: 1px solid #e3e3e3; */
 background-color: #f4f4f4;
 border-radius: 2px;
 }
@@ -90,6 +92,7 @@ border-radius: 2px;
   .categories {
     gap: 0;
     border: 1px solid rgba(84, 84, 84, 0.7);
+    
 
 
     width: 170px;
@@ -97,7 +100,7 @@ border-radius: 2px;
     height: -webkit-min-content;
     height: -moz-min-content;
     height: min-content;
-    border: 2px solid #e3e3e3;
+    /* border: 2px solid #e3e3e3; */
     background-color: #f4f4f4;
     border-radius: 2px;
     /* overflow: hidden; */
@@ -112,6 +115,7 @@ border-radius: 2px;
     left: -1px;
     z-index: 1;
     border: 2px solid #e3e3e3;
+    /* border: 1px solid rgba(84, 84, 84, 0.7); */
     background-color: #f4f4f4;
     
     display: none;
@@ -124,16 +128,19 @@ border-radius: 2px;
 
   .categories__button-title {
     display: block;
+    
   }
 
   .categories__button {
     /* display: none; */
     border: none;
     width: 100%;
+    font-size: 14px;
   }
 
   .categories__button_active {
     background-color: #f9f9f9;
+    font-weight: 600;
   }
 
 }
