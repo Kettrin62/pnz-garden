@@ -6,7 +6,10 @@ const menuElement = bodyElement.querySelector('.menu');
 const menuButton = bodyElement.querySelector('.button-menu');
 // находим кнопку закрытия меню
 const menuCloseButton = bodyElement.querySelector('.menu__button-close');
+// находим кнопки категорий
+const arrButtonElement = bodyElement.querySelectorAll('.categories__button');
 
+// swiper
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   slidesPerView: 1,
@@ -31,6 +34,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// кнопка меню в мобильной версии
 // функция открытия меню
 function openMenu() {
   menuElement.classList.add('menu_opened');
@@ -50,3 +54,10 @@ menuButton.addEventListener('click', () => {
 menuCloseButton.addEventListener('click', () => {
   closeMenu();
 });
+
+
+// выпадающая кнопка категорий
+// функция открытия списка кнопок
+function openButtons() {
+
+}
