@@ -6,8 +6,10 @@ const menuElement = bodyElement.querySelector('.menu');
 const menuButton = bodyElement.querySelector('.button-menu');
 // находим кнопку закрытия меню
 const menuCloseButton = bodyElement.querySelector('.menu__button-close');
-// находим кнопки категорий
-const arrButtonElement = bodyElement.querySelectorAll('.categories__button');
+// находим кнопку категорий
+const buttonCategoriesElement = bodyElement.querySelector('.categories__button-title');
+// находим список категорий
+const listCategoriesElement = bodyElement.querySelector('.categories__list');
 
 // swiper
 const swiper = new Swiper('.swiper', {
@@ -58,6 +60,11 @@ menuCloseButton.addEventListener('click', () => {
 
 // выпадающая кнопка категорий
 // функция открытия списка кнопок
-function openButtons() {
-
+function openListButtons() {
+  listCategoriesElement.classList.toggle('categories__list_opened');
 }
+
+// обработчик клика по кнопке категорий
+buttonCategoriesElement.addEventListener('click', () => {
+  openListButtons();
+})

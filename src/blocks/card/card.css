@@ -129,19 +129,49 @@
 
 
   .card__caption {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 1.1;
-    min-height: 36px;
+    min-height: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
   }
 
+  .card__text {
+    font-size: 12px;
+    align-self: start;
+    text-align: start;
+  }
+
   .card__quantity {
     font-size: 12px;
+    margin: 0;
+    align-self: flex-end;
+
   }
 
   .card__price {
     font-size: 12px;
+    margin: 0;
+    align-self: flex-end;
+  }
+
+  .card__image {
+    height: 61vw;
+  }
+
+  .card__discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card__button-cart {
+    width: 80%;
+    min-height: 25px;
+    font-size: 14px;
+    font-weight: 500;
   }
 }
