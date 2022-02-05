@@ -35,5 +35,6 @@
     /* max-width: 282px; */
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    gap: 5px;
   }
 }
