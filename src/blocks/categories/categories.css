@@ -37,7 +37,6 @@
   width: 100%;
   height: 100%;
   background-size: 10px 40px;
-  /* transform: rotate(180deg); */
 }
 
 .categories__list {
@@ -54,9 +53,6 @@
 .categories__item {
   min-height: 30px;
 text-align: center;
-  /* border-radius: 3px;
-  border: 1px solid rgba(84, 84, 84, 0.7); */
-
 }
 
 .categories__button {
@@ -75,7 +71,6 @@ text-align: center;
 }
 
 .categories__button_active {
-  /* border: 2px solid #000; */
   font-weight: 500;
   background-color: #e8e8e8;
 }
@@ -115,11 +110,8 @@ text-align: center;
     left: -1px;
     z-index: 1;
     border: 2px solid #e3e3e3;
-    /* border: 1px solid rgba(84, 84, 84, 0.7); */
     background-color: #f4f4f4;
-    
     display: none;
-    
   }
 
   .categories__list_opened {
@@ -128,11 +120,9 @@ text-align: center;
 
   .categories__button-title {
     display: flex;
-    
   }
 
   .categories__button {
-    /* display: none; */
     border: none;
     width: 100%;
     font-size: 14px;
@@ -142,5 +132,4 @@ text-align: center;
     background-color: #f9f9f9;
     font-weight: 600;
   }
-
 }

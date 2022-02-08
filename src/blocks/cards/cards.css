@@ -17,7 +17,6 @@
 
 @media all and (max-width: 900px) {
   .cards {
-    /* max-width: 444px; */
     padding-left: 10px;
     column-gap: 10px;
   }
