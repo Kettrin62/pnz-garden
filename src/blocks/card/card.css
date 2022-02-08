@@ -6,6 +6,8 @@
 
 
   position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
 .card__button-card {
@@ -17,6 +19,8 @@
   padding: 0;
   width: 100%;
   transition: opacity .3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
 
 
 
@@ -112,6 +116,12 @@
   font-size: 16px;
   font-weight: 500;
   transition: transform .3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .card__button-cart:nth-of-type(2n) {
