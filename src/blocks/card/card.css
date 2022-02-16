@@ -6,6 +6,7 @@
   position: relative;
   text-decoration: none;
   color: inherit;
+  
 }
 
 .card__button-card {
@@ -19,6 +20,18 @@
   transition: opacity .3s ease-in-out;
   text-decoration: none;
   color: inherit;
+  height: 430px;
+
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* filter: blur(4px); */
+  /* position: relative;
+  z-index: -5; */
 }
 
 .card__button-card:hover {
@@ -37,7 +50,14 @@
   width: 100%;
   align-items: flex-start;
   border-radius: 5px;
-  height: 430px;
+  /* height: 430px; */
+
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(0); */
+  /* z-index: 12; */
+  height: 295px;
 }
 
 .card__caption {
@@ -108,6 +128,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .card__button-cart:nth-of-type(2n) {
