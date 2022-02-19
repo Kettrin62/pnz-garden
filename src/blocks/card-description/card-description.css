@@ -67,7 +67,7 @@
   text-align: justify;
   margin: 20px 0 0 0;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
 
 }
 
@@ -89,5 +89,44 @@
 
   .card-description__price {
     margin: 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .card-description {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .card-description__image {
+    grid-row: 2/3;
+    float: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .card-description__price-container {
+    /* align-items: center; */
+    align-items: flex-end;
+    justify-self: end;
+
+  }
+
+  .card-description__title {
+    grid-row: 0/1;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: underline;
+  }
+
+  .card-description__caption {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .card-description__button {
+    font-size: 14px;
   }
 }
