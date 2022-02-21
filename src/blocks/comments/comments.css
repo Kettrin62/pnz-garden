@@ -53,6 +53,12 @@
   text-align: justify;
 }
 
+.comments__paginator {
+  align-self: center;
+}
+
+
+
 @media all and (max-width: 500px) {
   .comments__text {
     font-size: 14px;
