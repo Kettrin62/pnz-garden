@@ -68,10 +68,13 @@ function openListButtons() {
   listCategoriesElement.classList.toggle('categories__list_opened');
 }
 
-// обработчик клика по кнопке категорий
-buttonCategoriesElement.addEventListener('click', () => {
-  openListButtons();
-})
+if (buttonCategoriesElement) {
+  // обработчик клика по кнопке категорий
+  buttonCategoriesElement.addEventListener('click', () => {
+    openListButtons();
+  })
+}
+
 
 // функция обнуления ссылок
 function inactiveLink(link) {
