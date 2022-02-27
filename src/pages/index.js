@@ -14,6 +14,11 @@ const listCategoriesElement = bodyElement.querySelector('.categories__list');
 const categoriesItemLinks = bodyElement.querySelectorAll('.categories__button');
 // находим наименование активной категории
 const currentCategoriesElement = bodyElement.querySelector('.categories__current');
+// находим кнопку Добавить комментарий
+const buttonAddCommentsElement = bodyElement.querySelector('.comments__button');
+// находим форму комментарий
+const formCommentsElement = bodyElement.querySelector('.form');
+
 
 // swiper
 const swiper = new Swiper('.swiper', {
@@ -43,11 +48,13 @@ const swiper = new Swiper('.swiper', {
 // кнопка меню в мобильной версии
 // функция открытия меню
 function openMenu() {
+  console.log(menuElement);
   menuElement.classList.add('menu_opened');
 }
 
 // функция закрытия меню
 function closeMenu() {
+  console.log(menuElement);
   menuElement.classList.remove('menu_opened');
 }
 
@@ -94,3 +101,26 @@ categoriesItemLinks.forEach((item) => {
     activeLink(item)
   } else inactiveLink(item);
 });
+
+
+// функция открытия/закрытия формы комментарий
+function toggleForm() {
+  formCommentsElement.classList.toggle('form_opened');
+}
+
+// функция изменения текста кнопки
+const changeText = (button) => {
+  if (button.textContent === 'Добавить комментарий') {
+    button.textContent = 'Скрыть форму';
+  } else {
+    button.textContent = 'Добавить комментарий';
+  };
+}
+
+// обработчик клика по кнопке Добавить комментарий
+buttonAddCommentsElement.addEventListener('click', () => {
+  toggleForm();
+  changeText(buttonAddCommentsElement);
+});
+
+

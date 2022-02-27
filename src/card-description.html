@@ -178,6 +178,19 @@
       <hr class="card-description__line">
       <article class="comments">
         <a class="comments__button" href="#">Добавить комментарий</a>
+        <form name="comments" class="form" action="." method="POST">
+          <fieldset class="form__info">
+            <label for="firstname" class="form__label">Имя</label>
+            <input type="text" id="firstname" name="firstname" class="form__item" minlength="2" maxlength="50" required>
+            <span class="form__item-error" id="firstname-error"></span>
+            <label for="comments" class="form__label">Комментарий</label>
+            <textarea name="comments" id="comments" class="form__item form__item_el_comments" minlength="2" required></textarea>
+            <span class="form__item-error" id="comments-error"></span>
+            <button type="submit" class="form__button">
+              Опубликовать
+            </button>
+          </fieldset>
+        </form>
         <div class="comments__container">
           <h4 class="comments__name">Серафим</h4>
           <p class="comments__data">добавлено 20.02.2022г.</p>
