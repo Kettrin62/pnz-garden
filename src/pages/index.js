@@ -17,7 +17,11 @@ const currentCategoriesElement = bodyElement.querySelector('.categories__current
 // находим кнопку Добавить комментарий
 const buttonAddCommentsElement = bodyElement.querySelector('.comments__button');
 // находим форму комментарий
-const formCommentsElement = bodyElement.querySelector('.form');
+const formCommentsElement = bodyElement.querySelector('.form_option_comments');
+// находим кнопку Оформить заказ
+const buttonOrderElement = bodyElement.querySelector('.cart__button-order');
+// находим форму оформления заказа
+const formOrderElement = bodyElement.querySelector('.form_option_order');
 
 
 // swiper
@@ -59,14 +63,18 @@ function closeMenu() {
 }
 
 // обработчик клика по кнопке меню
-menuButton.addEventListener('click', () => {
-  openMenu();
-});
+if (menuButton) {
+  menuButton.addEventListener('click', () => {
+    openMenu();
+  });
+}
 
 // обработчик клика по кнопке закрытия меню
-menuCloseButton.addEventListener('click', () => {
-  closeMenu();
-});
+if (menuCloseButton) {
+  menuCloseButton.addEventListener('click', () => {
+    closeMenu();
+  });
+}
 
 
 // выпадающая кнопка категорий
@@ -103,24 +111,42 @@ categoriesItemLinks.forEach((item) => {
 });
 
 
-// функция открытия/закрытия формы комментарий
-function toggleForm() {
-  formCommentsElement.classList.toggle('form_opened');
+// функция открытия/закрытия формы 
+function toggleForm(el, nameClass) {
+  // formCommentsElement.classList.toggle('form_opened');
+  el.classList.toggle(nameClass);
 }
 
 // функция изменения текста кнопки
-const changeText = (button) => {
-  if (button.textContent === 'Добавить комментарий') {
+// const changeText = (button, text) => {
+//   if (button.textContent === 'Добавить комментарий') {
+//     button.textContent = 'Скрыть форму';
+//   } else {
+//     button.textContent = 'Добавить комментарий';
+//   };
+// }
+const changeText = (button, text) => {
+  if (button.textContent === text) {
     button.textContent = 'Скрыть форму';
   } else {
-    button.textContent = 'Добавить комментарий';
+    button.textContent = text;
   };
 }
 
 // обработчик клика по кнопке Добавить комментарий
-buttonAddCommentsElement.addEventListener('click', () => {
-  toggleForm();
-  changeText(buttonAddCommentsElement);
-});
+if (buttonAddCommentsElement) {
+  // обработчик клика по кнопке
+  buttonAddCommentsElement.addEventListener('click', () => {
+    toggleForm(formCommentsElement, 'form_opened');
+    changeText(buttonAddCommentsElement, 'Добавить комментарий');
+  });
+}
 
-
+// обработчик клика по кнопке Оформить заказ
+if (buttonOrderElement) {
+  // обработчик клика по кнопке
+  buttonOrderElement.addEventListener('click', () => {
+    toggleForm(formOrderElement, 'form_opened');
+    changeText(buttonOrderElement, 'Оформить заказ');
+  });
+}
