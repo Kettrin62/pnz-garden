@@ -223,6 +223,8 @@
   }
 
   .cart__image {
+    height: 21vw;
+    width: 21vw;
     grid-row: 2/4;
   }
 
