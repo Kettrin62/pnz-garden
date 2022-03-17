@@ -22,6 +22,8 @@ const formCommentsElement = bodyElement.querySelector('.form_option_comments');
 const buttonOrderElement = bodyElement.querySelector('.cart__button-order');
 // находим форму оформления заказа
 const formOrderElement = bodyElement.querySelector('.cart__order');
+// находим ссылки в меню навигации
+const linkMenuElements = bodyElement.querySelectorAll('.nav__link');
 
 
 // swiper
@@ -73,6 +75,17 @@ if (menuButton) {
 if (menuCloseButton) {
   menuCloseButton.addEventListener('click', () => {
     closeMenu();
+  });
+}
+
+// обработчик клика на ссылки меню(для закрытия выпадающего меню)
+if (linkMenuElements) {
+  linkMenuElements.forEach((item) => {
+    item.addEventListener('click', () => {
+      if (menuElement.classList.contains('menu_opened')) {
+        closeMenu();
+      }
+    })
   });
 }
 
