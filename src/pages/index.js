@@ -116,9 +116,7 @@ function toggleForm(el, nameClass) {
 }
 
 function scrollToElement(el) {
-  
   el.scrollIntoView({block: "center", behavior: "smooth"});
-  console.log(el);
 }
 
 const changeText = (button, text) => {
