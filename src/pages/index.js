@@ -116,7 +116,9 @@ function toggleForm(el, nameClass) {
 }
 
 function scrollToElement(el) {
+  
   el.scrollIntoView({block: "center", behavior: "smooth"});
+  console.log(el);
 }
 
 const changeText = (button, text) => {
@@ -130,7 +132,8 @@ const changeText = (button, text) => {
 // обработчик клика по кнопке Добавить комментарий
 if (buttonAddCommentsElement) {
   // обработчик клика по кнопке
-  buttonAddCommentsElement.addEventListener('click', () => {
+  buttonAddCommentsElement.addEventListener('click', (evt) => {
+    evt.preventDefault();
     toggleForm(formCommentsElement, 'form_opened');
     changeText(buttonAddCommentsElement, 'Добавить комментарий');
     scrollToElement(formCommentsElement);
@@ -140,7 +143,8 @@ if (buttonAddCommentsElement) {
 // обработчик клика по кнопке Оформить заказ
 if (buttonOrderElement) {
   // обработчик клика по кнопке
-  buttonOrderElement.addEventListener('click', () => {
+  buttonOrderElement.addEventListener('click', (evt) => {
+    evt.preventDefault();
     toggleForm(formOrderElement, 'cart__order_opened');
     changeText(buttonOrderElement, 'Оформить заказ');
     scrollToElement(formOrderElement);
